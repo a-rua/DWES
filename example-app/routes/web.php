@@ -1,6 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use app\Http\Controllers\NoteController;
+use App\Http\Controllers\NoteController;
 
-Route::get('/note', [NoteController::class, 'index']);
+Route::get('/', [NoteController::class, 'index']);
