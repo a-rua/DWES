@@ -8,8 +8,11 @@
 <body>
     <h1>Notas</h1>
     <ul>
+    <a href="{{ route('note.insertForm') }}">Insert</a>
         @foreach ($notes as $note)
-        <li>{{$note->title}} -- {{$note->description}}</li>
+        <li>{{$note->title}} -- {{$note->description}}
+        <a href="{{ route('note.edit') }}">Edit</a>
+        </li>
         @endforeach
 </ul>
 </body>
